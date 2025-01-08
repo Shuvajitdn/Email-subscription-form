@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscription Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Subscribe Button -->
+    <div class="start-btn">
+        <a href="#">Subscribe Now</a>
+    </div>
+    
+    <!-- Subscription Modal -->
+    <div class="modal-box">
+        <div class="fas fa-times close-btn"></div>
+        <div class="fas fa-bell icon1"></div>
+        <header>Subscribe to Our Newsletter</header>
+        <p>Get the latest updates and exclusive offers right in your inbox!</p>
+        <form id="subscription-form">
+            <div class="fas fa-envelope icon2"></div>
+            <input type="email" id="email" required placeholder="Enter your email" title="Enter a valid email (e.g., name@example.com)">
+            <button type="submit">Subscribe</button>
+        </form>
+        <div class="success-message">Thank you for subscribing!</div>
+        <div class="social-icons">
+            <a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
